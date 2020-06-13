@@ -20,6 +20,7 @@ def main():
     # images = (images > 0.5).astype(np.int)
     num_iter = 1000
     for i in range(num_iter):
+        print(i)
         target = np.random.choice(len(images))
         x_sampled = images[target]
         bm.update(x_sampled)
